@@ -1,2 +1,3 @@
-# send-it-v2
-The react version of the send it web application
+# send it v2
+A react version of the send it web app
+
