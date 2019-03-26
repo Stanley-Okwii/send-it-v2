@@ -4,6 +4,7 @@ import { Form, Grid, Header, Button, Segment, Image } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import '../css/App.css';
 
+
 class SendItApp extends Component {
   constructor(props) {
     super(props);
@@ -22,12 +23,12 @@ class SendItApp extends Component {
               SendIT Courier Services
                 <Image src='logo.png' />
             </Header>
-            {this.state.isLogInTab ? (
-              <Form className='form-wrapper' size='large'>
-                <Button.Group>
-                  <Button icon='sign-in' onClick={this.showLogin} content='Sign In' />
-                  <Button icon='user plus' onClick={this.showSignUp} content='Sign Up' />
-                </Button.Group>
+            <Form className='form-wrapper' size='large'>
+              <Button.Group>
+                <Button icon='sign-in' onClick={this.showLogin} content='Sign In' />
+                <Button icon='user plus' onClick={this.showSignUp} content='Sign Up' />
+              </Button.Group>
+              {this.state.isLogInTab ? (
                 <Segment vertical>
                   <Form.Field>
                     <label className='label-align'>Email</label>
@@ -41,55 +42,49 @@ class SendItApp extends Component {
                     Login
             </Button>
                 </Segment>
-              </Form>
             )
               :
               (
-                <Form className='form-wrapper' size='large'>
-                  <Button.Group>
-                    <Button icon='sign-in' onClick={this.showLogin} content='Sign In' />
-                    <Button icon='user plus' onClick={this.showSignUp} content='Sign Up' />
-                  </Button.Group>
                   <Segment vertical>
-                    <Form.Field>
-                      <label className='label-align'>User Name</label>
-                      <input placeholder='User Name' />
-                    </Form.Field>
-                    <Form.Field>
-                      <label className='label-align' >Email</label>
-                      <input type='email' placeholder='Email' />
-                    </Form.Field>
-                    <Form.Field>
-                      <label className='label-align' >Password</label>
-                      <input type='password' placeholder='Password' />
-                    </Form.Field>
-                    <Form.Field>
-                      <label className='label-align' >Confirm password</label>
-                      <input type='password' placeholder='Confirm password' />
-                    </Form.Field>
-                    <Button className='index-button' color='teal'>
-                      sign up
-          </Button>
-                  </Segment>
-                </Form>
+                <Form.Field>
+                  <label className='label-align'>User Name</label>
+                  <input placeholder='User Name' />
+                </Form.Field>
+                <Form.Field>
+                  <label className='label-align' >Email</label>
+                  <input type='email' placeholder='Email' />
+                </Form.Field>
+                <Form.Field>
+                  <label className='label-align' >Password</label>
+                  <input type='password' placeholder='Password' />
+                </Form.Field>
+                <Form.Field>
+                  <label className='label-align' >Confirm password</label>
+                  <input type='password' placeholder='Confirm password' />
+                </Form.Field>
+                <Button className='index-button' color='teal'>
+                  sign up
+                </Button>
+              </Segment>
               )
             }
+            </Form>
           </Grid.Column>
         </Grid>
       </div>
-    );
-  }
+        );
+      }
 
   showLogin = () => {
-    this.setState({ isLogInTab: true });
-    console.log('showing log in');
-  }
+        this.setState({ isLogInTab: true });
+        console.log('showing log in');
+      }
 
   showSignUp = () => {
-    this.setState({ isLogInTab: false });
-    console.log('showing sign up');
+        this.setState({ isLogInTab: false });
+        console.log('showing sign up');
 
-  }
-}
+      }
+    }
 
-export default SendItApp;
+    export default SendItApp;
