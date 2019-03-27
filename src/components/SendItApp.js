@@ -5,7 +5,7 @@ import 'semantic-ui-css/semantic.min.css';
 import '../css/App.css';
 
 
-class SendItApp extends Component {
+export class SendItApp extends Component {
   constructor(props) {
     super(props);
 
@@ -87,4 +87,3 @@ class SendItApp extends Component {
       }
     }
 
-    export default SendItApp;
