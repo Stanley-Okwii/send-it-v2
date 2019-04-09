@@ -15,12 +15,16 @@ export const toggleTodo = id => ({
   id
 })
 
-export const toggleTabs = () => ({
-  type: 'TOGGLE_TAB',
-})
-
 export const VisibilityFilters = {
   SHOW_ALL: 'SHOW_ALL',
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
+
+export const toggleLogIn = () => ({
+  type: 'TOGGLE_LOGIN',
+})
+
+export const toggleSignUp = () => ({
+  type: 'TOGGLE_SIGNUP',
+})

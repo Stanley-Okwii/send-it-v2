@@ -1,6 +1,6 @@
 import React from 'react'
 import FilterLink from '../containers/FilterLink'
-import ToggleTab from '../containers/ToggleTab';
+// import ToggleButton from '../containers/ToggleButton';
 import { VisibilityFilters } from '../actions'
 
 const Footer = () => (
@@ -9,7 +9,7 @@ const Footer = () => (
     <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
     <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLink>
     <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>Completed</FilterLink>
-    <ToggleTab/>
+    <span>Welcome to send it, its still a work in progress </span>
   </div>
 )
 

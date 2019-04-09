@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 import todos from './todos'
 import visibilityFilter from './visibilityFilter'
-import toggleTab from './toggleTab'
+import isLogInTab from './isLoginTab'
 
 export default combineReducers({
   todos,
   visibilityFilter,
-  toggleTab
+  isLogInTab
 })
