@@ -8,7 +8,7 @@ import "react-semantic-toasts/styles/react-semantic-alert.css";
 import "semantic-ui-css/semantic.min.css";
 import "../css/App.css";
 
-class SendItApp extends Component {
+export class SendItApp extends Component {
   constructor(props) {
     super(props);
 

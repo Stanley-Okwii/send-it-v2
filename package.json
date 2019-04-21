@@ -24,11 +24,22 @@
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/App.js",
+      "!src/store/index.js",
+      "!src/setupTests.js",
+      "!src/serviceWorker.js"
+    ]
   },
   "browserslist": [
     ">0.2%",

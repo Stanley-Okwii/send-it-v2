@@ -1,0 +1,1216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SendItApp
+    history={
+      Object {
+        "push": [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "pathname": "/",
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <SemanticToastContainer
+          animation={null}
+          className=""
+          position="top-center"
+        />,
+        <Grid
+          style={
+            Object {
+              "height": "60%",
+            }
+          }
+          textAlign="center"
+          verticalAlign="middle"
+        >
+          <GridColumn
+            style={
+              Object {
+                "maxWidth": 600,
+              }
+            }
+          >
+            <Header
+              as="h2"
+              color="teal"
+              textAlign="center"
+            >
+              SendIT Courier Services
+              <Image
+                as="img"
+                src="logo.png"
+                ui={true}
+              />
+            </Header>
+            <Form
+              as="form"
+              className="form-wrapper"
+              size="large"
+            >
+              <ButtonGroup>
+                <Button
+                  as="button"
+                  content="Sign In"
+                  icon="sign-in"
+                  onClick={[Function]}
+                />
+                <Button
+                  as="button"
+                  content="Sign Up"
+                  icon="user plus"
+                  onClick={[Function]}
+                />
+              </ButtonGroup>
+              <Segment
+                vertical={true}
+              >
+                <FormField>
+                  <label
+                    className="label-align"
+                  >
+                    Email
+                  </label>
+                  <input
+                    placeholder="Email"
+                  />
+                </FormField>
+                <FormField>
+                  <label
+                    className="label-align"
+                  >
+                    Password
+                  </label>
+                  <input
+                    placeholder="Password"
+                    type="password"
+                  />
+                </FormField>
+                <Button
+                  as="button"
+                  className="index-button"
+                  color="teal"
+                >
+                  Login
+                </Button>
+              </Segment>
+            </Form>
+          </GridColumn>
+        </Grid>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "animation": null,
+          "className": "",
+          "position": "top-center",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <GridColumn
+            style={
+              Object {
+                "maxWidth": 600,
+              }
+            }
+          >
+            <Header
+              as="h2"
+              color="teal"
+              textAlign="center"
+            >
+              SendIT Courier Services
+              <Image
+                as="img"
+                src="logo.png"
+                ui={true}
+              />
+            </Header>
+            <Form
+              as="form"
+              className="form-wrapper"
+              size="large"
+            >
+              <ButtonGroup>
+                <Button
+                  as="button"
+                  content="Sign In"
+                  icon="sign-in"
+                  onClick={[Function]}
+                />
+                <Button
+                  as="button"
+                  content="Sign Up"
+                  icon="user plus"
+                  onClick={[Function]}
+                />
+              </ButtonGroup>
+              <Segment
+                vertical={true}
+              >
+                <FormField>
+                  <label
+                    className="label-align"
+                  >
+                    Email
+                  </label>
+                  <input
+                    placeholder="Email"
+                  />
+                </FormField>
+                <FormField>
+                  <label
+                    className="label-align"
+                  >
+                    Password
+                  </label>
+                  <input
+                    placeholder="Password"
+                    type="password"
+                  />
+                </FormField>
+                <Button
+                  as="button"
+                  className="index-button"
+                  color="teal"
+                >
+                  Login
+                </Button>
+              </Segment>
+            </Form>
+          </GridColumn>,
+          "style": Object {
+            "height": "60%",
+          },
+          "textAlign": "center",
+          "verticalAlign": "middle",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Header
+                as="h2"
+                color="teal"
+                textAlign="center"
+              >
+                SendIT Courier Services
+                <Image
+                  as="img"
+                  src="logo.png"
+                  ui={true}
+                />
+              </Header>,
+              <Form
+                as="form"
+                className="form-wrapper"
+                size="large"
+              >
+                <ButtonGroup>
+                  <Button
+                    as="button"
+                    content="Sign In"
+                    icon="sign-in"
+                    onClick={[Function]}
+                  />
+                  <Button
+                    as="button"
+                    content="Sign Up"
+                    icon="user plus"
+                    onClick={[Function]}
+                  />
+                </ButtonGroup>
+                <Segment
+                  vertical={true}
+                >
+                  <FormField>
+                    <label
+                      className="label-align"
+                    >
+                      Email
+                    </label>
+                    <input
+                      placeholder="Email"
+                    />
+                  </FormField>
+                  <FormField>
+                    <label
+                      className="label-align"
+                    >
+                      Password
+                    </label>
+                    <input
+                      placeholder="Password"
+                      type="password"
+                    />
+                  </FormField>
+                  <Button
+                    as="button"
+                    className="index-button"
+                    color="teal"
+                  >
+                    Login
+                  </Button>
+                </Segment>
+              </Form>,
+            ],
+            "style": Object {
+              "maxWidth": 600,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "h2",
+                "children": Array [
+                  "SendIT Courier Services",
+                  <Image
+                    as="img"
+                    src="logo.png"
+                    ui={true}
+                  />,
+                ],
+                "color": "teal",
+                "textAlign": "center",
+              },
+              "ref": null,
+              "rendered": Array [
+                "SendIT Courier Services",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "img",
+                    "src": "logo.png",
+                    "ui": true,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "as": "form",
+                "children": Array [
+                  <ButtonGroup>
+                    <Button
+                      as="button"
+                      content="Sign In"
+                      icon="sign-in"
+                      onClick={[Function]}
+                    />
+                    <Button
+                      as="button"
+                      content="Sign Up"
+                      icon="user plus"
+                      onClick={[Function]}
+                    />
+                  </ButtonGroup>,
+                  <Segment
+                    vertical={true}
+                  >
+                    <FormField>
+                      <label
+                        className="label-align"
+                      >
+                        Email
+                      </label>
+                      <input
+                        placeholder="Email"
+                      />
+                    </FormField>
+                    <FormField>
+                      <label
+                        className="label-align"
+                      >
+                        Password
+                      </label>
+                      <input
+                        placeholder="Password"
+                        type="password"
+                      />
+                    </FormField>
+                    <Button
+                      as="button"
+                      className="index-button"
+                      color="teal"
+                    >
+                      Login
+                    </Button>
+                  </Segment>,
+                ],
+                "className": "form-wrapper",
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <Button
+                        as="button"
+                        content="Sign In"
+                        icon="sign-in"
+                        onClick={[Function]}
+                      />,
+                      <Button
+                        as="button"
+                        content="Sign Up"
+                        icon="user plus"
+                        onClick={[Function]}
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "as": "button",
+                        "content": "Sign In",
+                        "icon": "sign-in",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "as": "button",
+                        "content": "Sign Up",
+                        "icon": "user plus",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <FormField>
+                        <label
+                          className="label-align"
+                        >
+                          Email
+                        </label>
+                        <input
+                          placeholder="Email"
+                        />
+                      </FormField>,
+                      <FormField>
+                        <label
+                          className="label-align"
+                        >
+                          Password
+                        </label>
+                        <input
+                          placeholder="Password"
+                          type="password"
+                        />
+                      </FormField>,
+                      <Button
+                        as="button"
+                        className="index-button"
+                        color="teal"
+                      >
+                        Login
+                      </Button>,
+                    ],
+                    "vertical": true,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": Array [
+                          <label
+                            className="label-align"
+                          >
+                            Email
+                          </label>,
+                          <input
+                            placeholder="Email"
+                          />,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Email",
+                            "className": "label-align",
+                          },
+                          "ref": null,
+                          "rendered": "Email",
+                          "type": "label",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "placeholder": "Email",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": Array [
+                          <label
+                            className="label-align"
+                          >
+                            Password
+                          </label>,
+                          <input
+                            placeholder="Password"
+                            type="password"
+                          />,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Password",
+                            "className": "label-align",
+                          },
+                          "ref": null,
+                          "rendered": "Password",
+                          "type": "label",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "placeholder": "Password",
+                            "type": "password",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "as": "button",
+                        "children": "Login",
+                        "className": "index-button",
+                        "color": "teal",
+                      },
+                      "ref": null,
+                      "rendered": "Login",
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <SemanticToastContainer
+            animation={null}
+            className=""
+            position="top-center"
+          />,
+          <Grid
+            style={
+              Object {
+                "height": "60%",
+              }
+            }
+            textAlign="center"
+            verticalAlign="middle"
+          >
+            <GridColumn
+              style={
+                Object {
+                  "maxWidth": 600,
+                }
+              }
+            >
+              <Header
+                as="h2"
+                color="teal"
+                textAlign="center"
+              >
+                SendIT Courier Services
+                <Image
+                  as="img"
+                  src="logo.png"
+                  ui={true}
+                />
+              </Header>
+              <Form
+                as="form"
+                className="form-wrapper"
+                size="large"
+              >
+                <ButtonGroup>
+                  <Button
+                    as="button"
+                    content="Sign In"
+                    icon="sign-in"
+                    onClick={[Function]}
+                  />
+                  <Button
+                    as="button"
+                    content="Sign Up"
+                    icon="user plus"
+                    onClick={[Function]}
+                  />
+                </ButtonGroup>
+                <Segment
+                  vertical={true}
+                >
+                  <FormField>
+                    <label
+                      className="label-align"
+                    >
+                      Email
+                    </label>
+                    <input
+                      placeholder="Email"
+                    />
+                  </FormField>
+                  <FormField>
+                    <label
+                      className="label-align"
+                    >
+                      Password
+                    </label>
+                    <input
+                      placeholder="Password"
+                      type="password"
+                    />
+                  </FormField>
+                  <Button
+                    as="button"
+                    className="index-button"
+                    color="teal"
+                  >
+                    Login
+                  </Button>
+                </Segment>
+              </Form>
+            </GridColumn>
+          </Grid>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "animation": null,
+            "className": "",
+            "position": "top-center",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <GridColumn
+              style={
+                Object {
+                  "maxWidth": 600,
+                }
+              }
+            >
+              <Header
+                as="h2"
+                color="teal"
+                textAlign="center"
+              >
+                SendIT Courier Services
+                <Image
+                  as="img"
+                  src="logo.png"
+                  ui={true}
+                />
+              </Header>
+              <Form
+                as="form"
+                className="form-wrapper"
+                size="large"
+              >
+                <ButtonGroup>
+                  <Button
+                    as="button"
+                    content="Sign In"
+                    icon="sign-in"
+                    onClick={[Function]}
+                  />
+                  <Button
+                    as="button"
+                    content="Sign Up"
+                    icon="user plus"
+                    onClick={[Function]}
+                  />
+                </ButtonGroup>
+                <Segment
+                  vertical={true}
+                >
+                  <FormField>
+                    <label
+                      className="label-align"
+                    >
+                      Email
+                    </label>
+                    <input
+                      placeholder="Email"
+                    />
+                  </FormField>
+                  <FormField>
+                    <label
+                      className="label-align"
+                    >
+                      Password
+                    </label>
+                    <input
+                      placeholder="Password"
+                      type="password"
+                    />
+                  </FormField>
+                  <Button
+                    as="button"
+                    className="index-button"
+                    color="teal"
+                  >
+                    Login
+                  </Button>
+                </Segment>
+              </Form>
+            </GridColumn>,
+            "style": Object {
+              "height": "60%",
+            },
+            "textAlign": "center",
+            "verticalAlign": "middle",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Header
+                  as="h2"
+                  color="teal"
+                  textAlign="center"
+                >
+                  SendIT Courier Services
+                  <Image
+                    as="img"
+                    src="logo.png"
+                    ui={true}
+                  />
+                </Header>,
+                <Form
+                  as="form"
+                  className="form-wrapper"
+                  size="large"
+                >
+                  <ButtonGroup>
+                    <Button
+                      as="button"
+                      content="Sign In"
+                      icon="sign-in"
+                      onClick={[Function]}
+                    />
+                    <Button
+                      as="button"
+                      content="Sign Up"
+                      icon="user plus"
+                      onClick={[Function]}
+                    />
+                  </ButtonGroup>
+                  <Segment
+                    vertical={true}
+                  >
+                    <FormField>
+                      <label
+                        className="label-align"
+                      >
+                        Email
+                      </label>
+                      <input
+                        placeholder="Email"
+                      />
+                    </FormField>
+                    <FormField>
+                      <label
+                        className="label-align"
+                      >
+                        Password
+                      </label>
+                      <input
+                        placeholder="Password"
+                        type="password"
+                      />
+                    </FormField>
+                    <Button
+                      as="button"
+                      className="index-button"
+                      color="teal"
+                    >
+                      Login
+                    </Button>
+                  </Segment>
+                </Form>,
+              ],
+              "style": Object {
+                "maxWidth": 600,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "h2",
+                  "children": Array [
+                    "SendIT Courier Services",
+                    <Image
+                      as="img"
+                      src="logo.png"
+                      ui={true}
+                    />,
+                  ],
+                  "color": "teal",
+                  "textAlign": "center",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "SendIT Courier Services",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": "img",
+                      "src": "logo.png",
+                      "ui": true,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "as": "form",
+                  "children": Array [
+                    <ButtonGroup>
+                      <Button
+                        as="button"
+                        content="Sign In"
+                        icon="sign-in"
+                        onClick={[Function]}
+                      />
+                      <Button
+                        as="button"
+                        content="Sign Up"
+                        icon="user plus"
+                        onClick={[Function]}
+                      />
+                    </ButtonGroup>,
+                    <Segment
+                      vertical={true}
+                    >
+                      <FormField>
+                        <label
+                          className="label-align"
+                        >
+                          Email
+                        </label>
+                        <input
+                          placeholder="Email"
+                        />
+                      </FormField>
+                      <FormField>
+                        <label
+                          className="label-align"
+                        >
+                          Password
+                        </label>
+                        <input
+                          placeholder="Password"
+                          type="password"
+                        />
+                      </FormField>
+                      <Button
+                        as="button"
+                        className="index-button"
+                        color="teal"
+                      >
+                        Login
+                      </Button>
+                    </Segment>,
+                  ],
+                  "className": "form-wrapper",
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": Array [
+                        <Button
+                          as="button"
+                          content="Sign In"
+                          icon="sign-in"
+                          onClick={[Function]}
+                        />,
+                        <Button
+                          as="button"
+                          content="Sign Up"
+                          icon="user plus"
+                          onClick={[Function]}
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "as": "button",
+                          "content": "Sign In",
+                          "icon": "sign-in",
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "as": "button",
+                          "content": "Sign Up",
+                          "icon": "user plus",
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": Array [
+                        <FormField>
+                          <label
+                            className="label-align"
+                          >
+                            Email
+                          </label>
+                          <input
+                            placeholder="Email"
+                          />
+                        </FormField>,
+                        <FormField>
+                          <label
+                            className="label-align"
+                          >
+                            Password
+                          </label>
+                          <input
+                            placeholder="Password"
+                            type="password"
+                          />
+                        </FormField>,
+                        <Button
+                          as="button"
+                          className="index-button"
+                          color="teal"
+                        >
+                          Login
+                        </Button>,
+                      ],
+                      "vertical": true,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <label
+                              className="label-align"
+                            >
+                              Email
+                            </label>,
+                            <input
+                              placeholder="Email"
+                            />,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Email",
+                              "className": "label-align",
+                            },
+                            "ref": null,
+                            "rendered": "Email",
+                            "type": "label",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "placeholder": "Email",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "input",
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <label
+                              className="label-align"
+                            >
+                              Password
+                            </label>,
+                            <input
+                              placeholder="Password"
+                              type="password"
+                            />,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Password",
+                              "className": "label-align",
+                            },
+                            "ref": null,
+                            "rendered": "Password",
+                            "type": "label",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "placeholder": "Password",
+                              "type": "password",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "input",
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "as": "button",
+                          "children": "Login",
+                          "className": "index-button",
+                          "color": "teal",
+                        },
+                        "ref": null,
+                        "rendered": "Login",
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

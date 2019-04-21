@@ -5,7 +5,7 @@ import SendItApp from "./components/SendItApp";
 import { Provider } from "react-redux";
 import store from '../src/store/index'
 
-const DefaultApp = () => (
+const App = () => (
   <Provider store={store}>
     <Router history={createBrowserHistory}>
       <div>
@@ -15,4 +15,4 @@ const DefaultApp = () => (
   </Provider>
 );
 
-export default DefaultApp;
+export default App;
