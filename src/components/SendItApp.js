@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { withRouter } from 'react-router-dom';
-import store from "../store";
 import { Form, Grid, Header, Button, Segment, Image } from "semantic-ui-react";
 
 import { SemanticToastContainer, toast } from "react-semantic-toasts";
@@ -19,7 +18,11 @@ export class SendItApp extends Component {
         email: "",
         password1: "",
         password2: ""
-      }
+      },
+      loginData: {
+        email: "",
+        password:""
+      },
     };
     let { history } = this.props;
     history.push({
@@ -28,8 +31,6 @@ export class SendItApp extends Component {
   }
 
   render() {
-    const isLogInTab = store.getState().isLogInTab;
-    console.log(isLogInTab);
     return (
       <div>
         <SemanticToastContainer position="top-center" />
@@ -59,25 +60,28 @@ export class SendItApp extends Component {
               {this.state.isLogInTab ? (
                 <Segment vertical>
                   <Form.Field>
-                    <label className="label-align">Email</label>
-                    <input placeholder="Email" />
+                    <Form.Input
+                      name="loginMail"
+                      placeholder="Email"
+                      value={this.state.loginData.email}
+                      onChange={this.onTextChange}
+                    />
                   </Form.Field>
                   <Form.Field>
-                    <label className="label-align">Password</label>
-                    <input type="password" placeholder="Password" />
+                    <Form.Input
+                      name="loginPassword"
+                      placeholder="Password"
+                      value={this.state.loginData.password}
+                      onChange={this.onTextChange}
+                    />
                   </Form.Field>
-                  <Button className="index-button" color="teal">
+                  <Button onClick={this.logIn} className="index-button" color="teal">
                     Login
                   </Button>
                 </Segment>
               ) : (
                 <Segment vertical>
                   <Form.Field>
-                    {/* <label className="label-align">User Name</label>
-                    <input
-                      placeholder="User Name"
-                      onChange={(event = this.handleEmailChange(event))}
-                    /> */}
                     <Form.Input
                       name="username"
                       placeholder="username"
@@ -86,8 +90,6 @@ export class SendItApp extends Component {
                     />
                   </Form.Field>
                   <Form.Field>
-                    {/* <label className="label-align">Email</label>
-                    <input type="email" placeholder="Email" /> */}
                     <Form.Input
                       name="email"
                       placeholder="email"
@@ -105,8 +107,6 @@ export class SendItApp extends Component {
                     />
                   </Form.Field>
                   <Form.Field>
-                    {/* <label className="label-align">Confirm password</label>
-                    <input type="password" placeholder="Confirm password" /> */}
                     <Form.Input
                       name="password2"
                       type="password"
@@ -154,12 +154,21 @@ export class SendItApp extends Component {
           userSignUpData: { ...this.state.userSignUpData, password2: value }
         });
       }
+      else if (name === "loginPassword") {
+        this.setState({
+          loginData: { ...this.state.loginData, password: value }
+        });
+      }
+      else if (name === "loginMail") {
+        this.setState({
+          loginData: { ...this.state.loginData, email: value }
+        });
+      }
     }
   };
 
   registerUser = () => {
-    // const url = "https://sender-app.herokuapp.com/api/v1/user";
-    const url = 'http://127.0.0.1:5000/api/v1/user'
+    const url = "https://sender-app.herokuapp.com/api/v1/user";
     const { email, password1, username} = this.state.userSignUpData
     const raw_data = {
       "email": email,
@@ -174,6 +183,7 @@ export class SendItApp extends Component {
         "Content-Type": "application/json"
       }
     };
+
     fetch(url, request)
       .then(response => response.json())
       .then(data => {
@@ -184,27 +194,66 @@ export class SendItApp extends Component {
               title: "Sign up",
               type: "success",
               description: <p>Successfully created an account</p>
-            },
-            () => console.log("toast closed"),
-            () => console.log("toast clicked")
+            }
           );
-          this.props.history.push('/app')
-          console.log(this.props.history);
         } else {
           toast(
             {
               title: "Failed to sign up",
               type: "error",
               description: <p>{message}</p>
-            },
-            () => console.log("toast closed"),
-            () => console.log("toast clicked")
+            }
           );
-          console.log("failed login");
         }
       })
       .catch(function(error) {
-        console.log("Error: " + error);
+        return;
+      });
+  };
+
+  logIn = () => {
+    const url = "https://sender-app.herokuapp.com/api/v1/auth/signin";
+    const { email, password} = this.state.loginData
+    const raw_data = {
+      "email": email,
+      "password": password,
+    }
+
+    const request = {
+      method: "POST",
+      body: JSON.stringify(raw_data),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    };
+
+    fetch(url, request)
+      .then(response => response.json())
+      .then(data => {
+        const message = data["message"];
+        if (message === "You have logged in successfully.") {
+          toast(
+            {
+              title: "Login success",
+              type: "success",
+              description: <p>Successfully logged in</p>
+            }
+          );
+          const token = data["user_token"]
+          sessionStorage.setItem("user_token", token);
+          this.props.history.push('/home')
+        } else {
+          toast(
+            {
+              title: "Failed to sign up",
+              type: "error",
+              description: <p>{message}</p>
+            }
+          );
+        }
+      })
+      .catch(function(error) {
+        return;
       });
   };
 }
