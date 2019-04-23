@@ -32,3 +32,13 @@ body, html {
   padding-left: 4px;
   padding-right: 4px;
 }
+
+#root > div > div > div.ui.secondary.menu {
+  background: #e0e1e2;
+}
+
+#root > div > div > form.ui.form {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}

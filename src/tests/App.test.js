@@ -11,5 +11,5 @@ it('renders without crashing', () => {
 test('reducers', () => {
   let state;
   state = reducers(undefined, {});
-  expect(state).toEqual({isLogInTab:true});
+  expect(state).toEqual({registration:[],isloggedin:[],loading:false,newParcel:[]});
 });

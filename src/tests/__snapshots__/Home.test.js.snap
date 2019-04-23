@@ -1,29 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`Home   renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Home
-    history={
-      Object {
-        "push": [MockFunction] {
-          "calls": Array [
-            Array [
-              Object {
-                "pathname": "/home",
-              },
-            ],
-          ],
-          "results": Array [
-            Object {
-              "isThrow": false,
-              "value": undefined,
-            },
-          ],
-        },
-      }
-    }
-  />,
+  Symbol(enzyme.__unrendered__): <Home />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -36,7 +16,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <SemanticToastContainer
@@ -44,18 +24,37 @@ ShallowWrapper {
           className=""
           position="top-center"
         />,
-        <Grid
-          style={
-            Object {
-              "height": "60%",
-            }
-          }
-          textAlign="center"
-          verticalAlign="middle"
+        <MenuBar />,
+        <Menu
+          pointing={true}
+          secondary={true}
         >
-          Home
-        </Grid>,
+          <MenuItem
+            active={true}
+            name="add"
+            onClick={[Function]}
+          />
+          <MenuItem
+            active={false}
+            name="pending"
+            onClick={[Function]}
+          />
+          <MenuItem
+            active={false}
+            name="delivered"
+            onClick={[Function]}
+          />
+          <MenuItem
+            active={false}
+            name="all"
+            onClick={[Function]}
+          />
+        </Menu>,
+        <Connect(AddParcel) />,
       ],
+      "style": Object {
+        "marginTop": "3em",
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -75,27 +74,116 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
         "props": Object {
-          "children": "Home",
-          "style": Object {
-            "height": "60%",
-          },
-          "textAlign": "center",
-          "verticalAlign": "middle",
+          "children": Array [
+            <MenuItem
+              active={true}
+              name="add"
+              onClick={[Function]}
+            />,
+            <MenuItem
+              active={false}
+              name="pending"
+              onClick={[Function]}
+            />,
+            <MenuItem
+              active={false}
+              name="delivered"
+              onClick={[Function]}
+            />,
+            <MenuItem
+              active={false}
+              name="all"
+              onClick={[Function]}
+            />,
+          ],
+          "pointing": true,
+          "secondary": true,
         },
         "ref": null,
-        "rendered": "Home",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": true,
+              "name": "add",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "name": "pending",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "name": "delivered",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "name": "all",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
         "type": [Function],
       },
     ],
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <SemanticToastContainer
@@ -103,18 +191,37 @@ ShallowWrapper {
             className=""
             position="top-center"
           />,
-          <Grid
-            style={
-              Object {
-                "height": "60%",
-              }
-            }
-            textAlign="center"
-            verticalAlign="middle"
+          <MenuBar />,
+          <Menu
+            pointing={true}
+            secondary={true}
           >
-            Home
-          </Grid>,
+            <MenuItem
+              active={true}
+              name="add"
+              onClick={[Function]}
+            />
+            <MenuItem
+              active={false}
+              name="pending"
+              onClick={[Function]}
+            />
+            <MenuItem
+              active={false}
+              name="delivered"
+              onClick={[Function]}
+            />
+            <MenuItem
+              active={false}
+              name="all"
+              onClick={[Function]}
+            />
+          </Menu>,
+          <Connect(AddParcel) />,
         ],
+        "style": Object {
+          "marginTop": "3em",
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -134,21 +241,110 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {
-            "children": "Home",
-            "style": Object {
-              "height": "60%",
-            },
-            "textAlign": "center",
-            "verticalAlign": "middle",
+            "children": Array [
+              <MenuItem
+                active={true}
+                name="add"
+                onClick={[Function]}
+              />,
+              <MenuItem
+                active={false}
+                name="pending"
+                onClick={[Function]}
+              />,
+              <MenuItem
+                active={false}
+                name="delivered"
+                onClick={[Function]}
+              />,
+              <MenuItem
+                active={false}
+                name="all"
+                onClick={[Function]}
+              />,
+            ],
+            "pointing": true,
+            "secondary": true,
           },
           "ref": null,
-          "rendered": "Home",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": true,
+                "name": "add",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "name": "pending",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "name": "delivered",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "name": "all",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
           "type": [Function],
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

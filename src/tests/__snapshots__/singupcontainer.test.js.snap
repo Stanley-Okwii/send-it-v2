@@ -1,0 +1,476 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpContainer  renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignUpContainer />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <FormField>
+          <FormInput
+            as={[Function]}
+            control={[Function]}
+            name="username"
+            onChange={[Function]}
+            placeholder="username"
+            value=""
+          />
+        </FormField>,
+        <FormField>
+          <FormInput
+            as={[Function]}
+            control={[Function]}
+            name="email"
+            onChange={[Function]}
+            placeholder="email"
+            value=""
+          />
+        </FormField>,
+        <FormField>
+          <FormInput
+            as={[Function]}
+            control={[Function]}
+            name="password1"
+            onChange={[Function]}
+            placeholder="password"
+            type="password"
+            value=""
+          />
+        </FormField>,
+        <FormField>
+          <FormInput
+            as={[Function]}
+            control={[Function]}
+            name="password2"
+            onChange={[Function]}
+            placeholder="confirm password"
+            type="password"
+            value=""
+          />
+        </FormField>,
+        <Button
+          as="button"
+          className="index-button"
+          color="teal"
+          onClick={[Function]}
+        >
+          sign up
+        </Button>,
+      ],
+      "vertical": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormInput
+            as={[Function]}
+            control={[Function]}
+            name="username"
+            onChange={[Function]}
+            placeholder="username"
+            value=""
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": [Function],
+            "control": [Function],
+            "name": "username",
+            "onChange": [Function],
+            "placeholder": "username",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormInput
+            as={[Function]}
+            control={[Function]}
+            name="email"
+            onChange={[Function]}
+            placeholder="email"
+            value=""
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": [Function],
+            "control": [Function],
+            "name": "email",
+            "onChange": [Function],
+            "placeholder": "email",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormInput
+            as={[Function]}
+            control={[Function]}
+            name="password1"
+            onChange={[Function]}
+            placeholder="password"
+            type="password"
+            value=""
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": [Function],
+            "control": [Function],
+            "name": "password1",
+            "onChange": [Function],
+            "placeholder": "password",
+            "type": "password",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormInput
+            as={[Function]}
+            control={[Function]}
+            name="password2"
+            onChange={[Function]}
+            placeholder="confirm password"
+            type="password"
+            value=""
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": [Function],
+            "control": [Function],
+            "name": "password2",
+            "onChange": [Function],
+            "placeholder": "confirm password",
+            "type": "password",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "as": "button",
+          "children": "sign up",
+          "className": "index-button",
+          "color": "teal",
+          "loading": undefined,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "sign up",
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <FormField>
+            <FormInput
+              as={[Function]}
+              control={[Function]}
+              name="username"
+              onChange={[Function]}
+              placeholder="username"
+              value=""
+            />
+          </FormField>,
+          <FormField>
+            <FormInput
+              as={[Function]}
+              control={[Function]}
+              name="email"
+              onChange={[Function]}
+              placeholder="email"
+              value=""
+            />
+          </FormField>,
+          <FormField>
+            <FormInput
+              as={[Function]}
+              control={[Function]}
+              name="password1"
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+              value=""
+            />
+          </FormField>,
+          <FormField>
+            <FormInput
+              as={[Function]}
+              control={[Function]}
+              name="password2"
+              onChange={[Function]}
+              placeholder="confirm password"
+              type="password"
+              value=""
+            />
+          </FormField>,
+          <Button
+            as="button"
+            className="index-button"
+            color="teal"
+            onClick={[Function]}
+          >
+            sign up
+          </Button>,
+        ],
+        "vertical": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <FormInput
+              as={[Function]}
+              control={[Function]}
+              name="username"
+              onChange={[Function]}
+              placeholder="username"
+              value=""
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": [Function],
+              "control": [Function],
+              "name": "username",
+              "onChange": [Function],
+              "placeholder": "username",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <FormInput
+              as={[Function]}
+              control={[Function]}
+              name="email"
+              onChange={[Function]}
+              placeholder="email"
+              value=""
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": [Function],
+              "control": [Function],
+              "name": "email",
+              "onChange": [Function],
+              "placeholder": "email",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <FormInput
+              as={[Function]}
+              control={[Function]}
+              name="password1"
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+              value=""
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": [Function],
+              "control": [Function],
+              "name": "password1",
+              "onChange": [Function],
+              "placeholder": "password",
+              "type": "password",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <FormInput
+              as={[Function]}
+              control={[Function]}
+              name="password2"
+              onChange={[Function]}
+              placeholder="confirm password"
+              type="password"
+              value=""
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": [Function],
+              "control": [Function],
+              "name": "password2",
+              "onChange": [Function],
+              "placeholder": "confirm password",
+              "type": "password",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "as": "button",
+            "children": "sign up",
+            "className": "index-button",
+            "color": "teal",
+            "loading": undefined,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "sign up",
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

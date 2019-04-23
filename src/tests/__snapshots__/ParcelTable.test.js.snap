@@ -1,0 +1,2095 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ParcelTable />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "as": "table",
+      "celled": true,
+      "children": Array [
+        <TableHeader
+          as="thead"
+        >
+          <TableRow
+            as="tr"
+            cellAs="td"
+          >
+            <TableHeaderCell
+              as="th"
+            />
+            <TableHeaderCell
+              as="th"
+            >
+              Name
+            </TableHeaderCell>
+            <TableHeaderCell
+              as="th"
+            >
+              Registration Date
+            </TableHeaderCell>
+            <TableHeaderCell
+              as="th"
+            >
+              E-mail address
+            </TableHeaderCell>
+            <TableHeaderCell
+              as="th"
+            >
+              Premium Plan
+            </TableHeaderCell>
+          </TableRow>
+        </TableHeader>,
+        <TableBody
+          as="tbody"
+        >
+          <TableRow
+            as="tr"
+            cellAs="td"
+          >
+            <TableCell
+              as="td"
+              collapsing={true}
+            >
+              <Checkbox
+                slider={true}
+                type="checkbox"
+              />
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              John Lilki
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              September 14, 2013
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              jhlilk22@yahoo.com
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              No
+            </TableCell>
+          </TableRow>
+          <TableRow
+            as="tr"
+            cellAs="td"
+          >
+            <TableCell
+              as="td"
+              collapsing={true}
+            >
+              <Checkbox
+                slider={true}
+                type="checkbox"
+              />
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              Jamie Harington
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              January 11, 2014
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              jamieharingonton@yahoo.com
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              Yes
+            </TableCell>
+          </TableRow>
+          <TableRow
+            as="tr"
+            cellAs="td"
+          >
+            <TableCell
+              as="td"
+              collapsing={true}
+            >
+              <Checkbox
+                slider={true}
+                type="checkbox"
+              />
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              Jill Lewis
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              May 11, 2014
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              jilsewris22@yahoo.com
+            </TableCell>
+            <TableCell
+              as="td"
+            >
+              Yes
+            </TableCell>
+          </TableRow>
+        </TableBody>,
+        <TableFooter
+          as="tfoot"
+          fullWidth={true}
+        >
+          <TableRow
+            as="tr"
+            cellAs="td"
+          >
+            <TableHeaderCell
+              as="th"
+            />
+            <TableHeaderCell
+              as="th"
+              colSpan="4"
+            >
+              <Button
+                as="button"
+                floated="right"
+                icon={true}
+                labelPosition="left"
+                primary={true}
+                size="small"
+              >
+                <Icon
+                  as="i"
+                  name="user"
+                />
+                 Add User
+              </Button>
+              <Button
+                as="button"
+                size="small"
+              >
+                Approve
+              </Button>
+              <Button
+                as="button"
+                disabled={true}
+                size="small"
+              >
+                Approve All
+              </Button>
+            </TableHeaderCell>
+          </TableRow>
+        </TableFooter>,
+      ],
+      "compact": true,
+      "definition": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "thead",
+          "children": <TableRow
+            as="tr"
+            cellAs="td"
+          >
+            <TableHeaderCell
+              as="th"
+            />
+            <TableHeaderCell
+              as="th"
+            >
+              Name
+            </TableHeaderCell>
+            <TableHeaderCell
+              as="th"
+            >
+              Registration Date
+            </TableHeaderCell>
+            <TableHeaderCell
+              as="th"
+            >
+              E-mail address
+            </TableHeaderCell>
+            <TableHeaderCell
+              as="th"
+            >
+              Premium Plan
+            </TableHeaderCell>
+          </TableRow>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "tr",
+            "cellAs": "td",
+            "children": Array [
+              <TableHeaderCell
+                as="th"
+              />,
+              <TableHeaderCell
+                as="th"
+              >
+                Name
+              </TableHeaderCell>,
+              <TableHeaderCell
+                as="th"
+              >
+                Registration Date
+              </TableHeaderCell>,
+              <TableHeaderCell
+                as="th"
+              >
+                E-mail address
+              </TableHeaderCell>,
+              <TableHeaderCell
+                as="th"
+              >
+                Premium Plan
+              </TableHeaderCell>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "th",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "th",
+                "children": "Name",
+              },
+              "ref": null,
+              "rendered": "Name",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "th",
+                "children": "Registration Date",
+              },
+              "ref": null,
+              "rendered": "Registration Date",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "th",
+                "children": "E-mail address",
+              },
+              "ref": null,
+              "rendered": "E-mail address",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "th",
+                "children": "Premium Plan",
+              },
+              "ref": null,
+              "rendered": "Premium Plan",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "tbody",
+          "children": Array [
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableCell
+                as="td"
+                collapsing={true}
+              >
+                <Checkbox
+                  slider={true}
+                  type="checkbox"
+                />
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                John Lilki
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                September 14, 2013
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                jhlilk22@yahoo.com
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                No
+              </TableCell>
+            </TableRow>,
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableCell
+                as="td"
+                collapsing={true}
+              >
+                <Checkbox
+                  slider={true}
+                  type="checkbox"
+                />
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                Jamie Harington
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                January 11, 2014
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                jamieharingonton@yahoo.com
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                Yes
+              </TableCell>
+            </TableRow>,
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableCell
+                as="td"
+                collapsing={true}
+              >
+                <Checkbox
+                  slider={true}
+                  type="checkbox"
+                />
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                Jill Lewis
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                May 11, 2014
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                jilsewris22@yahoo.com
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                Yes
+              </TableCell>
+            </TableRow>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "tr",
+              "cellAs": "td",
+              "children": Array [
+                <TableCell
+                  as="td"
+                  collapsing={true}
+                >
+                  <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  John Lilki
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  September 14, 2013
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  jhlilk22@yahoo.com
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  No
+                </TableCell>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />,
+                  "collapsing": true,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "slider": true,
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "John Lilki",
+                },
+                "ref": null,
+                "rendered": "John Lilki",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "September 14, 2013",
+                },
+                "ref": null,
+                "rendered": "September 14, 2013",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "jhlilk22@yahoo.com",
+                },
+                "ref": null,
+                "rendered": "jhlilk22@yahoo.com",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "No",
+                },
+                "ref": null,
+                "rendered": "No",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "tr",
+              "cellAs": "td",
+              "children": Array [
+                <TableCell
+                  as="td"
+                  collapsing={true}
+                >
+                  <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  Jamie Harington
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  January 11, 2014
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  jamieharingonton@yahoo.com
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  Yes
+                </TableCell>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />,
+                  "collapsing": true,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "slider": true,
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "Jamie Harington",
+                },
+                "ref": null,
+                "rendered": "Jamie Harington",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "January 11, 2014",
+                },
+                "ref": null,
+                "rendered": "January 11, 2014",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "jamieharingonton@yahoo.com",
+                },
+                "ref": null,
+                "rendered": "jamieharingonton@yahoo.com",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "Yes",
+                },
+                "ref": null,
+                "rendered": "Yes",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "tr",
+              "cellAs": "td",
+              "children": Array [
+                <TableCell
+                  as="td"
+                  collapsing={true}
+                >
+                  <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  Jill Lewis
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  May 11, 2014
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  jilsewris22@yahoo.com
+                </TableCell>,
+                <TableCell
+                  as="td"
+                >
+                  Yes
+                </TableCell>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />,
+                  "collapsing": true,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "slider": true,
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "Jill Lewis",
+                },
+                "ref": null,
+                "rendered": "Jill Lewis",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "May 11, 2014",
+                },
+                "ref": null,
+                "rendered": "May 11, 2014",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "jilsewris22@yahoo.com",
+                },
+                "ref": null,
+                "rendered": "jilsewris22@yahoo.com",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "td",
+                  "children": "Yes",
+                },
+                "ref": null,
+                "rendered": "Yes",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "tfoot",
+          "children": <TableRow
+            as="tr"
+            cellAs="td"
+          >
+            <TableHeaderCell
+              as="th"
+            />
+            <TableHeaderCell
+              as="th"
+              colSpan="4"
+            >
+              <Button
+                as="button"
+                floated="right"
+                icon={true}
+                labelPosition="left"
+                primary={true}
+                size="small"
+              >
+                <Icon
+                  as="i"
+                  name="user"
+                />
+                 Add User
+              </Button>
+              <Button
+                as="button"
+                size="small"
+              >
+                Approve
+              </Button>
+              <Button
+                as="button"
+                disabled={true}
+                size="small"
+              >
+                Approve All
+              </Button>
+            </TableHeaderCell>
+          </TableRow>,
+          "fullWidth": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "tr",
+            "cellAs": "td",
+            "children": Array [
+              <TableHeaderCell
+                as="th"
+              />,
+              <TableHeaderCell
+                as="th"
+                colSpan="4"
+              >
+                <Button
+                  as="button"
+                  floated="right"
+                  icon={true}
+                  labelPosition="left"
+                  primary={true}
+                  size="small"
+                >
+                  <Icon
+                    as="i"
+                    name="user"
+                  />
+                   Add User
+                </Button>
+                <Button
+                  as="button"
+                  size="small"
+                >
+                  Approve
+                </Button>
+                <Button
+                  as="button"
+                  disabled={true}
+                  size="small"
+                >
+                  Approve All
+                </Button>
+              </TableHeaderCell>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "th",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "th",
+                "children": Array [
+                  <Button
+                    as="button"
+                    floated="right"
+                    icon={true}
+                    labelPosition="left"
+                    primary={true}
+                    size="small"
+                  >
+                    <Icon
+                      as="i"
+                      name="user"
+                    />
+                     Add User
+                  </Button>,
+                  <Button
+                    as="button"
+                    size="small"
+                  >
+                    Approve
+                  </Button>,
+                  <Button
+                    as="button"
+                    disabled={true}
+                    size="small"
+                  >
+                    Approve All
+                  </Button>,
+                ],
+                "colSpan": "4",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "as": "button",
+                    "children": Array [
+                      <Icon
+                        as="i"
+                        name="user"
+                      />,
+                      " Add User",
+                    ],
+                    "floated": "right",
+                    "icon": true,
+                    "labelPosition": "left",
+                    "primary": true,
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "as": "i",
+                        "name": "user",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    " Add User",
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "as": "button",
+                    "children": "Approve",
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": "Approve",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "as": "button",
+                    "children": "Approve All",
+                    "disabled": true,
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": "Approve All",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "as": "table",
+        "celled": true,
+        "children": Array [
+          <TableHeader
+            as="thead"
+          >
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableHeaderCell
+                as="th"
+              />
+              <TableHeaderCell
+                as="th"
+              >
+                Name
+              </TableHeaderCell>
+              <TableHeaderCell
+                as="th"
+              >
+                Registration Date
+              </TableHeaderCell>
+              <TableHeaderCell
+                as="th"
+              >
+                E-mail address
+              </TableHeaderCell>
+              <TableHeaderCell
+                as="th"
+              >
+                Premium Plan
+              </TableHeaderCell>
+            </TableRow>
+          </TableHeader>,
+          <TableBody
+            as="tbody"
+          >
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableCell
+                as="td"
+                collapsing={true}
+              >
+                <Checkbox
+                  slider={true}
+                  type="checkbox"
+                />
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                John Lilki
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                September 14, 2013
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                jhlilk22@yahoo.com
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                No
+              </TableCell>
+            </TableRow>
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableCell
+                as="td"
+                collapsing={true}
+              >
+                <Checkbox
+                  slider={true}
+                  type="checkbox"
+                />
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                Jamie Harington
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                January 11, 2014
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                jamieharingonton@yahoo.com
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                Yes
+              </TableCell>
+            </TableRow>
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableCell
+                as="td"
+                collapsing={true}
+              >
+                <Checkbox
+                  slider={true}
+                  type="checkbox"
+                />
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                Jill Lewis
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                May 11, 2014
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                jilsewris22@yahoo.com
+              </TableCell>
+              <TableCell
+                as="td"
+              >
+                Yes
+              </TableCell>
+            </TableRow>
+          </TableBody>,
+          <TableFooter
+            as="tfoot"
+            fullWidth={true}
+          >
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableHeaderCell
+                as="th"
+              />
+              <TableHeaderCell
+                as="th"
+                colSpan="4"
+              >
+                <Button
+                  as="button"
+                  floated="right"
+                  icon={true}
+                  labelPosition="left"
+                  primary={true}
+                  size="small"
+                >
+                  <Icon
+                    as="i"
+                    name="user"
+                  />
+                   Add User
+                </Button>
+                <Button
+                  as="button"
+                  size="small"
+                >
+                  Approve
+                </Button>
+                <Button
+                  as="button"
+                  disabled={true}
+                  size="small"
+                >
+                  Approve All
+                </Button>
+              </TableHeaderCell>
+            </TableRow>
+          </TableFooter>,
+        ],
+        "compact": true,
+        "definition": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "thead",
+            "children": <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableHeaderCell
+                as="th"
+              />
+              <TableHeaderCell
+                as="th"
+              >
+                Name
+              </TableHeaderCell>
+              <TableHeaderCell
+                as="th"
+              >
+                Registration Date
+              </TableHeaderCell>
+              <TableHeaderCell
+                as="th"
+              >
+                E-mail address
+              </TableHeaderCell>
+              <TableHeaderCell
+                as="th"
+              >
+                Premium Plan
+              </TableHeaderCell>
+            </TableRow>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "tr",
+              "cellAs": "td",
+              "children": Array [
+                <TableHeaderCell
+                  as="th"
+                />,
+                <TableHeaderCell
+                  as="th"
+                >
+                  Name
+                </TableHeaderCell>,
+                <TableHeaderCell
+                  as="th"
+                >
+                  Registration Date
+                </TableHeaderCell>,
+                <TableHeaderCell
+                  as="th"
+                >
+                  E-mail address
+                </TableHeaderCell>,
+                <TableHeaderCell
+                  as="th"
+                >
+                  Premium Plan
+                </TableHeaderCell>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "th",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "th",
+                  "children": "Name",
+                },
+                "ref": null,
+                "rendered": "Name",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "th",
+                  "children": "Registration Date",
+                },
+                "ref": null,
+                "rendered": "Registration Date",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "th",
+                  "children": "E-mail address",
+                },
+                "ref": null,
+                "rendered": "E-mail address",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "th",
+                  "children": "Premium Plan",
+                },
+                "ref": null,
+                "rendered": "Premium Plan",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "tbody",
+            "children": Array [
+              <TableRow
+                as="tr"
+                cellAs="td"
+              >
+                <TableCell
+                  as="td"
+                  collapsing={true}
+                >
+                  <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  John Lilki
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  September 14, 2013
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  jhlilk22@yahoo.com
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  No
+                </TableCell>
+              </TableRow>,
+              <TableRow
+                as="tr"
+                cellAs="td"
+              >
+                <TableCell
+                  as="td"
+                  collapsing={true}
+                >
+                  <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  Jamie Harington
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  January 11, 2014
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  jamieharingonton@yahoo.com
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  Yes
+                </TableCell>
+              </TableRow>,
+              <TableRow
+                as="tr"
+                cellAs="td"
+              >
+                <TableCell
+                  as="td"
+                  collapsing={true}
+                >
+                  <Checkbox
+                    slider={true}
+                    type="checkbox"
+                  />
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  Jill Lewis
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  May 11, 2014
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  jilsewris22@yahoo.com
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  Yes
+                </TableCell>
+              </TableRow>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "tr",
+                "cellAs": "td",
+                "children": Array [
+                  <TableCell
+                    as="td"
+                    collapsing={true}
+                  >
+                    <Checkbox
+                      slider={true}
+                      type="checkbox"
+                    />
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    John Lilki
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    September 14, 2013
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    jhlilk22@yahoo.com
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    No
+                  </TableCell>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": <Checkbox
+                      slider={true}
+                      type="checkbox"
+                    />,
+                    "collapsing": true,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "slider": true,
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "John Lilki",
+                  },
+                  "ref": null,
+                  "rendered": "John Lilki",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "September 14, 2013",
+                  },
+                  "ref": null,
+                  "rendered": "September 14, 2013",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "jhlilk22@yahoo.com",
+                  },
+                  "ref": null,
+                  "rendered": "jhlilk22@yahoo.com",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "No",
+                  },
+                  "ref": null,
+                  "rendered": "No",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "tr",
+                "cellAs": "td",
+                "children": Array [
+                  <TableCell
+                    as="td"
+                    collapsing={true}
+                  >
+                    <Checkbox
+                      slider={true}
+                      type="checkbox"
+                    />
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    Jamie Harington
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    January 11, 2014
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    jamieharingonton@yahoo.com
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    Yes
+                  </TableCell>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": <Checkbox
+                      slider={true}
+                      type="checkbox"
+                    />,
+                    "collapsing": true,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "slider": true,
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "Jamie Harington",
+                  },
+                  "ref": null,
+                  "rendered": "Jamie Harington",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "January 11, 2014",
+                  },
+                  "ref": null,
+                  "rendered": "January 11, 2014",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "jamieharingonton@yahoo.com",
+                  },
+                  "ref": null,
+                  "rendered": "jamieharingonton@yahoo.com",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "Yes",
+                  },
+                  "ref": null,
+                  "rendered": "Yes",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "tr",
+                "cellAs": "td",
+                "children": Array [
+                  <TableCell
+                    as="td"
+                    collapsing={true}
+                  >
+                    <Checkbox
+                      slider={true}
+                      type="checkbox"
+                    />
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    Jill Lewis
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    May 11, 2014
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    jilsewris22@yahoo.com
+                  </TableCell>,
+                  <TableCell
+                    as="td"
+                  >
+                    Yes
+                  </TableCell>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": <Checkbox
+                      slider={true}
+                      type="checkbox"
+                    />,
+                    "collapsing": true,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "slider": true,
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "Jill Lewis",
+                  },
+                  "ref": null,
+                  "rendered": "Jill Lewis",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "May 11, 2014",
+                  },
+                  "ref": null,
+                  "rendered": "May 11, 2014",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "jilsewris22@yahoo.com",
+                  },
+                  "ref": null,
+                  "rendered": "jilsewris22@yahoo.com",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "td",
+                    "children": "Yes",
+                  },
+                  "ref": null,
+                  "rendered": "Yes",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "tfoot",
+            "children": <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <TableHeaderCell
+                as="th"
+              />
+              <TableHeaderCell
+                as="th"
+                colSpan="4"
+              >
+                <Button
+                  as="button"
+                  floated="right"
+                  icon={true}
+                  labelPosition="left"
+                  primary={true}
+                  size="small"
+                >
+                  <Icon
+                    as="i"
+                    name="user"
+                  />
+                   Add User
+                </Button>
+                <Button
+                  as="button"
+                  size="small"
+                >
+                  Approve
+                </Button>
+                <Button
+                  as="button"
+                  disabled={true}
+                  size="small"
+                >
+                  Approve All
+                </Button>
+              </TableHeaderCell>
+            </TableRow>,
+            "fullWidth": true,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "tr",
+              "cellAs": "td",
+              "children": Array [
+                <TableHeaderCell
+                  as="th"
+                />,
+                <TableHeaderCell
+                  as="th"
+                  colSpan="4"
+                >
+                  <Button
+                    as="button"
+                    floated="right"
+                    icon={true}
+                    labelPosition="left"
+                    primary={true}
+                    size="small"
+                  >
+                    <Icon
+                      as="i"
+                      name="user"
+                    />
+                     Add User
+                  </Button>
+                  <Button
+                    as="button"
+                    size="small"
+                  >
+                    Approve
+                  </Button>
+                  <Button
+                    as="button"
+                    disabled={true}
+                    size="small"
+                  >
+                    Approve All
+                  </Button>
+                </TableHeaderCell>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "th",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "th",
+                  "children": Array [
+                    <Button
+                      as="button"
+                      floated="right"
+                      icon={true}
+                      labelPosition="left"
+                      primary={true}
+                      size="small"
+                    >
+                      <Icon
+                        as="i"
+                        name="user"
+                      />
+                       Add User
+                    </Button>,
+                    <Button
+                      as="button"
+                      size="small"
+                    >
+                      Approve
+                    </Button>,
+                    <Button
+                      as="button"
+                      disabled={true}
+                      size="small"
+                    >
+                      Approve All
+                    </Button>,
+                  ],
+                  "colSpan": "4",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "as": "button",
+                      "children": Array [
+                        <Icon
+                          as="i"
+                          name="user"
+                        />,
+                        " Add User",
+                      ],
+                      "floated": "right",
+                      "icon": true,
+                      "labelPosition": "left",
+                      "primary": true,
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "as": "i",
+                          "name": "user",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      " Add User",
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "as": "button",
+                      "children": "Approve",
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": "Approve",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "as": "button",
+                      "children": "Approve All",
+                      "disabled": true,
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": "Approve All",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

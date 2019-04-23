@@ -10,28 +10,10 @@ describe("Send It", () => {
 
   it("renders respond to onclick events", () => {
     const wrapper = shallow(<SendItApp history={{ push: jest.fn() }} />);
+    wrapper.find('Button').first().simulate('click');
+    wrapper.find('#signup').simulate('click');
 
     wrapper.instance().showLogin();
     wrapper.instance().showSignUp();
-    wrapper.instance().registerUser();
-    wrapper.instance().logIn();
-  });
-
-  it("renders call on Text Change function when text is changed", () => {
-    const wrapper = shallow(<SendItApp history={{ push: jest.fn() }} />);
-    let name = 'username';
-    const value = 'text has changed';
-    const _event = {};
-    wrapper.instance().onTextChange(_event, { name:name, value:value});
-    name = 'email';
-    wrapper.instance().onTextChange(_event, { name:name, value:value});
-    name = 'password1';
-    wrapper.instance().onTextChange(_event, { name:name, value:value});
-    name = 'password2';
-    wrapper.instance().onTextChange(_event, { name:name, value:value});
-    name = 'loginPassword';
-    wrapper.instance().onTextChange(_event, { name:name, value:value});
-    name = 'loginMail';
-    wrapper.instance().onTextChange(_event, { name:name, value:value});
   });
 });

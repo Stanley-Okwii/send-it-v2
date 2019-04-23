@@ -1,6 +1,10 @@
-import { combineReducers } from 'redux'
-import isLogInTab from './isLoginTab'
+import { combineReducers } from 'redux';
+import { signUp, login, loading } from './Registration';
+import { addParcel } from './ParcelReducer';
 
 export default combineReducers({
-  isLogInTab
-})
+  registration: signUp,
+  isloggedin: login,
+  loading,
+  newParcel: addParcel
+});
