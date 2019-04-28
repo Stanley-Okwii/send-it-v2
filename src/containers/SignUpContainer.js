@@ -4,14 +4,15 @@ import { Form, Button, Segment } from "semantic-ui-react";
 
 import { Register } from "../../src/actions/registration/login";
 
+
 export class SignUpContainer extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
       password1: "",
       email: "",
-      username: "",
-      password2: ""
+      username: ""
     };
   }
 
@@ -23,8 +24,6 @@ export class SignUpContainer extends Component {
         this.setState({ password1: value });
       } else if (name === "username") {
         this.setState({ username: value });
-      } else if (name === "password2") {
-        this.setState({ password2: value });
       }
     }
   };
@@ -57,24 +56,14 @@ export class SignUpContainer extends Component {
             onChange={this.onTextChange}
           />
         </Form.Field>
-        <Form.Field>
-          <Form.Input
-            name="password2"
-            type="password"
-            placeholder="confirm password"
-            value={this.state.password2}
-            onChange={this.onTextChange}
-          />
-        </Form.Field>
         <Button loading={this.props.loading}
           onClick={() => {
             const data = {
               email: this.state.email,
-              password: this.state.password2,
+              password: this.state.password1,
               name: this.state.username
             };
-            this.props.register(data);
-            this.setState({ loading: false });
+              this.props.register(data);
           }}
             className="index-button" color="teal">
           sign up

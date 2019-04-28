@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import MenuBar from "../components/MenuBar";
+import { MenuBar } from "../components/MenuBar";
 
 it("renders without crashing", () => {
   const wrapper = shallow(<MenuBar />);

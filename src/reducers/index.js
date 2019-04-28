@@ -1,10 +1,19 @@
-import { combineReducers } from 'redux';
-import { signUp, login, loading } from './Registration';
-import { addParcel } from './ParcelReducer';
+import { combineReducers } from "redux";
+import {
+  signUp,
+  login,
+  loading,
+  loadingParcel,
+  isLoginTab
+} from "./Registration";
+import { addParcel, fetchParcels } from "./ParcelReducer";
 
 export default combineReducers({
   registration: signUp,
   isloggedin: login,
+  loadingParcel,
   loading,
-  newParcel: addParcel
+  isLogInTab: isLoginTab,
+  newParcel: addParcel,
+  allParcels: fetchParcels
 });

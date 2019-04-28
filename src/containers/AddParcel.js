@@ -96,21 +96,22 @@ export class AddParcel extends Component {
             onChange={this.onTextChange}
           />
         </Form.Field>
-            <Button
-                id="post-parcel"
-                loading={this.props.loading}
-                onClick={() => {
-                    const data =
-                    {
-                        destination: this.state.destination,
-                        parcel: this.state.name,
-                        pickup_location: this.state.pickup,
-                        price: this.state.price,
-                        receiver: this.state.receipient,
-                        weight: this.state.weight
-                    };
-                    this.props.postParcel(data);
-                }}>
+        <Button
+          id="post-parcel"
+          color="teal"
+          loading={this.props.loadingParcel}
+          onClick={() => {
+            const data = {
+              destination: this.state.destination,
+              parcel: this.state.name,
+              pickup_location: this.state.pickup,
+              price: this.state.price,
+              receiver: this.state.receipient,
+              weight: this.state.weight
+            };
+            this.props.postParcel(data);
+          }}
+        >
           SAVE
         </Button>
       </Form>
@@ -121,7 +122,7 @@ export class AddParcel extends Component {
 export const mapStateToProps = state => {
   return {
     ...state,
-    loading: state.loading
+    loadingParcel: state.loadingParcel
   };
 };
 

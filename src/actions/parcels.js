@@ -1,12 +1,12 @@
 import React from "react";
 import axios from "axios";
-import { toast } from "react-semantic-toasts";
+import { toast } from 'react-toastify';
 
 export const header = {
   headers: {
     accept: "application/json",
     "content-type": "application/json",
-    Authorization: `Bearer ${sessionStorage.getItem("user_token")}`
+    Authorization: `Bearer ${sessionStorage.user_token}`
   }
 };
 
@@ -15,35 +15,28 @@ export const postParcel = data => {
 
   return dispatch => {
     dispatch({
-      type: "LOADING",
+      type: "LOADING_PARCEL",
       payload: true
     });
     return axios
       .post(url, data, header)
       .then(function(response) {
+        toast.success(<p>Successfully created a parcel</p>);
         dispatch({
           type: "ADD_PARCEL",
           payload: response.data["message"]
         });
-        toast({
-          title: "Add Parcel",
-          type: "success",
-          description: <p>Successfully created a parcel</p>
-        });
         dispatch({
-          type: "LOADING",
+          type: "LOADING_PARCEL",
           payload: false
         });
       })
       .catch(function(error) {
         if (error.response) {
-          toast({
-            title: "Failed to add parcel",
-            type: "error",
-            description: <p>{error.response.data.message}</p>
-          });
+          toast.error(<p>{error.response.data.message}</p>
+          );
           dispatch({
-            type: "LOADING",
+            type: "LOADING_PARCEL",
             payload: false
           });
         }

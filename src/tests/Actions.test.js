@@ -2,7 +2,7 @@ import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import moxios from "moxios";
 
-import { login, Register } from "../actions/registration/login";
+import { login, Register, toggleTab } from "../actions/registration/login";
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -33,7 +33,12 @@ describe("Actions", () => {
       username: "asdsds"
     };
     const store = mockStore({ payload: [] });
-    const expectAction = [{"payload": true, "type": "LOADING"}, {"payload": "You have successfully sign up", "type": "SIGN_UP"}, {"payload": false, "type": "LOADING"}]
+    const expectAction = [
+      { payload: true, type: "LOADING" },
+      { payload: "You have successfully sign up", type: "SIGN_UP" },
+      { payload: false, type: "LOADING" },
+      { payload: true, type: "LOGIN_TAB" }
+    ];
     return store.dispatch(Register(userData)).then(() => {
       expect(store.getActions()).toEqual(expectAction);
     });
@@ -52,7 +57,10 @@ describe("Actions", () => {
       password: "nam127@e",
       username: "asdsds"
     };
-    const expectedAction = [{ "payload": true, "type": "LOADING" }, { "payload": false, "type": "LOADING" }];
+    const expectedAction = [
+      { payload: true, type: "LOADING" },
+      { payload: false, type: "LOADING" }
+    ];
     const store = mockStore({ payload: [] });
     return store.dispatch(Register(userData)).then(() => {
       expect(store.getActions()).toEqual(expectedAction);
@@ -69,24 +77,23 @@ describe("Actions", () => {
     });
     const userData = {
       email: "mail@gmail.com",
-      password: "nam127@e",
+      password: "nam127@e"
     };
     const store = mockStore({ payload: [] });
-    const expectAction =
-      [
-        {
-          "payload": true,
-          "type": "LOADING",
-        },
-        {
-          "payload": "You have successfully sign up",
-          "type": "LOGIN",
-        },
-        {
-          "payload": false,
-          "type": "LOADING",
-        },
-      ];
+    const expectAction = [
+      {
+        payload: true,
+        type: "LOADING"
+      },
+      {
+        payload: "You have successfully sign up",
+        type: "LOGIN"
+      },
+      {
+        payload: false,
+        type: "LOADING"
+      }
+    ];
     return store.dispatch(login(userData)).then(() => {
       expect(store.getActions()).toEqual(expectAction);
     });
@@ -102,10 +109,15 @@ describe("Actions", () => {
     });
     const userData = {
       email: "mail@gmail.com",
-      password: "nam127@e",
+      password: "nam127@e"
     };
-    const expectedAction = [{"payload": true, "type": "LOADING"}, {"payload": false, "type": "LOADING"}]
+    const expectedAction = [
+      { payload: true, type: "LOGIN_TAB" },
+      { payload: true, type: "LOADING" },
+      { payload: false, type: "LOADING" }
+    ];
     const store = mockStore({ payload: [] });
+    store.dispatch(toggleTab(true));
     return store.dispatch(login(userData)).then(() => {
       expect(store.getActions()).toEqual(expectedAction);
     });

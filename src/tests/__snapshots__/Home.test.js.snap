@@ -19,12 +19,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <SemanticToastContainer
-          animation={null}
-          className=""
-          position="top-center"
-        />,
-        <MenuBar />,
+        <withRouter(MenuBar) />,
         <Menu
           pointing={true}
           secondary={true}
@@ -36,17 +31,7 @@ ShallowWrapper {
           />
           <MenuItem
             active={false}
-            name="pending"
-            onClick={[Function]}
-          />
-          <MenuItem
-            active={false}
-            name="delivered"
-            onClick={[Function]}
-          />
-          <MenuItem
-            active={false}
-            name="all"
+            name="View all"
             onClick={[Function]}
           />
         </Menu>,
@@ -61,20 +46,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "animation": null,
-          "className": "",
-          "position": "top-center",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {},
         "ref": null,
         "rendered": null,
@@ -93,17 +65,7 @@ ShallowWrapper {
             />,
             <MenuItem
               active={false}
-              name="pending"
-              onClick={[Function]}
-            />,
-            <MenuItem
-              active={false}
-              name="delivered"
-              onClick={[Function]}
-            />,
-            <MenuItem
-              active={false}
-              name="all"
+              name="View all"
               onClick={[Function]}
             />,
           ],
@@ -131,33 +93,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "active": false,
-              "name": "pending",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "active": false,
-              "name": "delivered",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "active": false,
-              "name": "all",
+              "name": "View all",
               "onClick": [Function],
             },
             "ref": null,
@@ -186,12 +122,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <SemanticToastContainer
-            animation={null}
-            className=""
-            position="top-center"
-          />,
-          <MenuBar />,
+          <withRouter(MenuBar) />,
           <Menu
             pointing={true}
             secondary={true}
@@ -203,17 +134,7 @@ ShallowWrapper {
             />
             <MenuItem
               active={false}
-              name="pending"
-              onClick={[Function]}
-            />
-            <MenuItem
-              active={false}
-              name="delivered"
-              onClick={[Function]}
-            />
-            <MenuItem
-              active={false}
-              name="all"
+              name="View all"
               onClick={[Function]}
             />
           </Menu>,
@@ -228,20 +149,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "animation": null,
-            "className": "",
-            "position": "top-center",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {},
           "ref": null,
           "rendered": null,
@@ -260,17 +168,7 @@ ShallowWrapper {
               />,
               <MenuItem
                 active={false}
-                name="pending"
-                onClick={[Function]}
-              />,
-              <MenuItem
-                active={false}
-                name="delivered"
-                onClick={[Function]}
-              />,
-              <MenuItem
-                active={false}
-                name="all"
+                name="View all"
                 onClick={[Function]}
               />,
             ],
@@ -298,33 +196,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "active": false,
-                "name": "pending",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "active": false,
-                "name": "delivered",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "active": false,
-                "name": "all",
+                "name": "View all",
                 "onClick": [Function],
               },
               "ref": null,

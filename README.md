@@ -12,4 +12,5 @@ A courier service that helps users deliver parcels to different destinations
 ## Implemented features
 - Users can create an account.
 - Users can create a parcel delivery order.
+- Users can view all parcel delivery orders.
 - Users can log into send it.

@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import { Container, Menu } from "semantic-ui-react";
-import { SemanticToastContainer } from "react-semantic-toasts";
 
 import ParcelTable from "./Table";
 import MenuBar from "./MenuBar";
-import AddParcel from "../containers/AddParcel"
+import AddParcel from "../containers/AddParcel";
 
-import "react-semantic-toasts/styles/react-semantic-alert.css";
 import "semantic-ui-css/semantic.min.css";
 
 import "../css/App.css";
@@ -26,7 +24,6 @@ export class Home extends Component {
     const { activeItem } = this.state;
     return (
       <Container style={{ marginTop: "3em" }}>
-        <SemanticToastContainer position="top-center" />
         <MenuBar />
         <Menu secondary pointing>
           <Menu.Item
@@ -35,18 +32,8 @@ export class Home extends Component {
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name="pending"
-            active={activeItem === "pending"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="delivered"
-            active={activeItem === "delivered"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="all"
-            active={activeItem === "all"}
+            name="View all"
+            active={activeItem === "View all"}
             onClick={this.handleItemClick}
           />
         </Menu>
@@ -57,7 +44,7 @@ export class Home extends Component {
 
   renderSelection = () => {
     const { activeItem } = this.state;
-    if (activeItem === "all") {
+    if (activeItem === "View all") {
       return <ParcelTable />;
     }
     if (activeItem === "add") {

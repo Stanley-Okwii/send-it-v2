@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { toast } from "react-semantic-toasts";
+import { toast } from "react-toastify";
 
 export const header = {
   headers: {
@@ -20,27 +20,23 @@ export const Register = data => {
     return axios
       .post(url, data, header)
       .then(function(response) {
+        toast.success(<p>Successfully created an account</p>);
         dispatch({
           type: "SIGN_UP",
           payload: response.data["message"]
-        });
-        toast({
-          title: "Sign up",
-          type: "success",
-          description: <p>Successfully created an account</p>
         });
         dispatch({
           type: "LOADING",
           payload: false
         });
+        dispatch({
+          type: "LOGIN_TAB",
+          payload: true
+        });
       })
       .catch(function(error) {
         if (error.response) {
-          toast({
-            title: "Failed to sign up",
-            type: "error",
-            description: <p>{error.response.data.message}</p>
-          });
+          toast.error(<p>{error.response.data.message}</p>);
           dispatch({
             type: "LOADING",
             payload: false
@@ -50,7 +46,7 @@ export const Register = data => {
   };
 };
 
-export const login = data => {
+export const login = (data, ownProps) => {
   const url = "https://sender-app.herokuapp.com/api/v1/auth/signin";
 
   return dispatch => {
@@ -65,31 +61,32 @@ export const login = data => {
           type: "LOGIN",
           payload: response.data["message"]
         });
-        toast({
-          title: "Login success",
-          type: "success",
-          description: <p>Successfully logged in</p>
-        });
+        toast.success(<p>Successfully logged in</p>);
         const token = response.data["user_token"];
         sessionStorage.setItem("user_token", token);
         dispatch({
           type: "LOADING",
           payload: false
         });
-        window.location.href = "/home";
+        ownProps.history.push("/home");
       })
       .catch(function(error) {
         if (error.response) {
-          toast({
-            title: "Failed to log in",
-            type: "error",
-            description: <p>{error.response.data.message}</p>
-          });
+          toast.error(<p>{error.response.data.message}</p>);
           dispatch({
             type: "LOADING",
             payload: false
           });
         }
       });
+  };
+};
+
+export const toggleTab = data => {
+  return dispatch => {
+    dispatch({
+      type: "LOGIN_TAB",
+      payload: data
+    });
   };
 };

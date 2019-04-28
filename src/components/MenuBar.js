@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
+import { withRouter } from "react-router-dom";
 
 export class MenuBar extends Component {
   state = { activeItem: 'home' }
@@ -23,7 +24,12 @@ export class MenuBar extends Component {
           <Menu.Item
             name='logout'
             active={activeItem === 'logout'}
-            onClick={this.handleItemClick}
+            onClick={(e, { name }) => {
+              this.handleItemClick(e, { name });
+              sessionStorage.clear();
+              this.props.history.push('/');
+            }
+            }
           />
         </Menu.Menu>
       </Menu>
@@ -31,4 +37,4 @@ export class MenuBar extends Component {
   }
 }
 
-export default MenuBar;
+export default withRouter(MenuBar);

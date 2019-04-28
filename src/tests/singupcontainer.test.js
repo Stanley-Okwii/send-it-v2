@@ -20,9 +20,6 @@ describe("SignUpContainer ", () => {
     wrapper
       .instance()
       .onTextChange(event, { name: "password1", value: "email" });
-    wrapper
-      .instance()
-      .onTextChange(event, { name: "password2", value: "email" });
 
     expect(wrapper.instance().state.username).toEqual("dope");
   });

@@ -1,5 +1,5 @@
-import { signUp, login , loading} from "../reducers/Registration";
-import { addParcel } from '../../src/reducers/ParcelReducer';
+import { signUp, login , loading, loadingParcel, isLoginTab} from "../reducers/Registration";
+import { addParcel, fetchParcels } from '../../src/reducers/ParcelReducer';
 
 describe("registration ", () => {
   it("should loading reducers", () => {
@@ -37,4 +37,33 @@ describe("registration ", () => {
       })
     ).toEqual([]);
   });
+
+  it("should show all parcels", () => {
+    expect(
+      fetchParcels([], {
+        type: "FETCH_PARCELS",
+        payload: []
+      })
+    ).toEqual([]);
+  });
+
+  it("should show loading", () => {
+    expect(
+      loadingParcel([], {
+        type: "LOADING_PARCEL",
+        payload: []
+      })
+    ).toEqual([]);
+  });
+
+  it("should show loading parcel", () => {
+    expect(
+      isLoginTab([], {
+        type: "LOGIN_TAB",
+        payload: []
+      })
+    ).toEqual([]);
+  });
+
+
 });

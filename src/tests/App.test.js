@@ -1,15 +1,23 @@
 import React from "react";
 import { shallow } from "enzyme";
-import App from '../components/SendItApp';
-import reducers from '../reducers/index';
+import SendItApp from "../containers/SendItApp";
+import reducers from "../reducers/index";
 
-it('renders without crashing', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper).toMatchSnapshot();
+it("renders without crashing", () => {
+  const wrapper = shallow(<SendItApp />);
+  expect(wrapper).toMatchSnapshot();
 });
 
-test('reducers', () => {
+test("reducers", () => {
   let state;
   state = reducers(undefined, {});
-  expect(state).toEqual({registration:[],isloggedin:[],loading:false,newParcel:[]});
+  expect(state).toEqual({
+    registration: [],
+    isloggedin: [],
+    loadingParcel: false,
+    loading: false,
+    isLogInTab: true,
+    newParcel: [],
+    allParcels: []
+  });
 });

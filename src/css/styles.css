@@ -1,0 +1,17 @@
+.Toastify__toast.Toastify__toast--error {
+  border-radius: 5px;
+}
+
+.Toastify__toast--error {
+  background: #fff6f6;
+  color: #9f3a38;
+}
+
+.Toastify__toast.Toastify__toast--success {
+  border-radius: 5px;
+}
+
+.Toastify__toast--success {
+  background-color: #fcfff5;
+  color: #2c662d;
+}

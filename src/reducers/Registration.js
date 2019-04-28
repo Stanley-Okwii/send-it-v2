@@ -25,3 +25,20 @@ export const signUp = (state = [], action) => {
     }
   }
 
+export const loadingParcel = (state = false, action) => {
+    switch (action.type) {
+      case 'LOADING_PARCEL':
+        return action.payload
+      default:
+        return state;
+    }
+}
+
+export const isLoginTab = (state = true, action) => {
+  switch (action.type) {
+    case 'LOGIN_TAB':
+      return action.payload;
+    default:
+      return state;
+  }
+}

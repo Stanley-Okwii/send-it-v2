@@ -89,6 +89,7 @@ ShallowWrapper {
         </FormField>,
         <Button
           as="button"
+          color="teal"
           id="post-parcel"
           onClick={[Function]}
         >
@@ -317,6 +318,7 @@ ShallowWrapper {
         "props": Object {
           "as": "button",
           "children": "SAVE",
+          "color": "teal",
           "id": "post-parcel",
           "loading": undefined,
           "onClick": [Function],
@@ -405,6 +407,7 @@ ShallowWrapper {
           </FormField>,
           <Button
             as="button"
+            color="teal"
             id="post-parcel"
             onClick={[Function]}
           >
@@ -633,6 +636,7 @@ ShallowWrapper {
           "props": Object {
             "as": "button",
             "children": "SAVE",
+            "color": "teal",
             "id": "post-parcel",
             "loading": undefined,
             "onClick": [Function],

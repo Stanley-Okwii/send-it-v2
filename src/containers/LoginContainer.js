@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 import { Form, Button, Segment } from "semantic-ui-react";
 
 import { login } from "../../src/actions/registration/login";
@@ -50,7 +51,7 @@ export class LoginContainer extends Component {
               email: this.state.email,
               password: this.state.password
             };
-            this.props.login(data);
+            this.props.login(data, this.props);
           }}
           className="index-button"
           color="teal"
@@ -71,13 +72,15 @@ export const mapStateToProps = state => {
 
 export const mapDispatchToProps = dispatch => {
   return {
-    login: function(data) {
-      dispatch(login(data));
+    login: function(data, ownProps) {
+      dispatch(login(data, ownProps));
     }
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(LoginContainer);
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(LoginContainer)
+);

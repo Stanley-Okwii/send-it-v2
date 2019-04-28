@@ -1,63 +1,34 @@
-import React from 'react'
-import { Button, Checkbox, Icon, Table } from 'semantic-ui-react'
+import React, { Component} from "react";
+import { Table } from "semantic-ui-react";
+import TableContainer from "../containers/TableContainer";
 
-const ParcelTable = () => (
-  <Table compact celled definition>
-    <Table.Header>
-      <Table.Row>
-        <Table.HeaderCell />
-        <Table.HeaderCell>Name</Table.HeaderCell>
-        <Table.HeaderCell>Registration Date</Table.HeaderCell>
-        <Table.HeaderCell>E-mail address</Table.HeaderCell>
-        <Table.HeaderCell>Premium Plan</Table.HeaderCell>
-      </Table.Row>
-    </Table.Header>
+export class ParcelTable extends Component {
+  render() {
+    return (
+      <Table compact celled definition>
+        <Table.Header>
+          <Table.Row>
+            <Table.HeaderCell>Date</Table.HeaderCell>
+            <Table.HeaderCell>Parcel</Table.HeaderCell>
+            <Table.HeaderCell>Parcel ID</Table.HeaderCell>
+            <Table.HeaderCell>Weight(Kgs)</Table.HeaderCell>
+            <Table.HeaderCell>Price(Ugx)</Table.HeaderCell>
+            <Table.HeaderCell>Recepient</Table.HeaderCell>
+            <Table.HeaderCell>Pick up</Table.HeaderCell>
+            <Table.HeaderCell>Destination</Table.HeaderCell>
+            <Table.HeaderCell>Current location</Table.HeaderCell>
+            <Table.HeaderCell>Status</Table.HeaderCell>
+          </Table.Row>
+        </Table.Header>
 
-    <Table.Body>
-      <Table.Row>
-        <Table.Cell collapsing>
-          <Checkbox slider />
-        </Table.Cell>
-        <Table.Cell>John Lilki</Table.Cell>
-        <Table.Cell>September 14, 2013</Table.Cell>
-        <Table.Cell>jhlilk22@yahoo.com</Table.Cell>
-        <Table.Cell>No</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell collapsing>
-          <Checkbox slider />
-        </Table.Cell>
-        <Table.Cell>Jamie Harington</Table.Cell>
-        <Table.Cell>January 11, 2014</Table.Cell>
-        <Table.Cell>jamieharingonton@yahoo.com</Table.Cell>
-        <Table.Cell>Yes</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell collapsing>
-          <Checkbox slider />
-        </Table.Cell>
-        <Table.Cell>Jill Lewis</Table.Cell>
-        <Table.Cell>May 11, 2014</Table.Cell>
-        <Table.Cell>jilsewris22@yahoo.com</Table.Cell>
-        <Table.Cell>Yes</Table.Cell>
-      </Table.Row>
-    </Table.Body>
+        <TableContainer />
 
-    <Table.Footer fullWidth>
-      <Table.Row>
-        <Table.HeaderCell />
-        <Table.HeaderCell colSpan='4'>
-          <Button floated='right' icon labelPosition='left' primary size='small'>
-            <Icon name='user' /> Add User
-          </Button>
-          <Button size='small'>Approve</Button>
-          <Button disabled size='small'>
-            Approve All
-          </Button>
-        </Table.HeaderCell>
-      </Table.Row>
-    </Table.Footer>
-  </Table>
-)
+        <Table.Footer fullWidth>
+          <Table.Row />
+        </Table.Footer>
+      </Table>
+    );
+  }
+}
 
-export default ParcelTable
+export default ParcelTable;
